@@ -14,7 +14,10 @@
 			<h1>HTML, CSS, and JS Fundamentals</h1>
 			<h2>Building Blocks for Web Developers</h2>
 			<!-- Global site navigation -->
-
+			<?php
+				//Get the navigation HTML
+				include("includes/nav.php")
+			?>
 		</header>
 		<!-- Page-level main content -->
 		<main>
