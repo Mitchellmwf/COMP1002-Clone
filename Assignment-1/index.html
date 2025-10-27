@@ -1,11 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta title="Pizza LTD">
+  <meta title="Pizza Customization">
   <meta type="Student" name="Mitchell Fountain">
   <meta charset="utf-8">
 </head>
+
 <body>
+
     <header>
-      <p>Welcome to <strong>Mario's Pizza Palace!</strong></p>
-        <h3>Best Pizza in Town</h3>
+      <h1>Welcome to <strong>Mario's Pizza Palace's</strong> pizza crafter</h1>
+        <h2>Best Pizza in Town</h2>
+    </header>
+    <main>
+      <form id="pizza_specs" action="address.html" method="post">
+        <!--Size-->
+        <fieldset>
+          <legend>Select your size: </legend>
+          <div>
+            <input type="radio" name="size" value="6inch"/>
+            <label for="6inch">6 inches</label>
+          </div>
+          <div>
+            <input type="radio" name="size" value="10inch"/>
+            <label for="10inch">10 inches</label>
+          </div>
+          <div>
+            <input type="radio" name="size" value="13inch"/>
+            <label for="13inch">13 inches</label>
+          </div>
+          <div>
+            <input type="radio" name="size" value="15inch"/>
+            <label for="15inch">15 inches</label>
+          </div>
+        </fieldset>
+        <br/>
+        <!--Crust type-->
+        <fieldset>
+          <legend>Select your crust: </legend>
+          <div>
+            <input type="radio" name="crust" value="regular"/>
+            <label for="6inch">Classic crust</label>
+          </div>
+          <div>
+            <input type="radio" name="crust" value="stuffed"/>
+            <label for="10inch">Stuffed Crust</label>
+          </div>
+          <div>
+            <input type="radio" name="crust" value="thick"/>
+            <label for="13inch">Thick Crust</label>
+          </div>
+          <div>
+            <input type="radio" name="crust" value="thin"/>
+            <label for="15inch">Thin Crust</label>
+          </div>
+        </fieldset>
+         <br/>
+        <!--Sauce selection-->
+        <fieldset>
+          <legend>Select your sauce</legend>
+          <div>
+            <input type="checkbox" name="sauce" value="tomato" checked/>
+            <label for="tomato">Marinara (Tomato sauce)</label>
+          </div>
+          <div>
+            <input type="checkbox" name="sauce" value="pesto"/>
+            <label for="pesto">Pesto sauce</label>
+          </div>
+        </fieldset>
+         <br/>
+        <fieldset>
+          <legend>Select your toppings: </legend>
+          <div> <!--Cheeses-->
+            <input type="checkbox" name="topping" value="mozzarella" checked/>
+            <label for="mozzarella">Mozzarella</label>
+            <input type="checkbox" name="topping" value="gouda"/>
+            <label for="gouda">Gouda</label>
+            <input type="checkbox" name="topping" value="jack"/>
+            <label for="gouda">Monterey Jack</label>
+          </div>
+          <!--Meats-->
+           <br/>
+          <div>
+            <input type="checkbox" name="topping" value="pepperoni"/>
+            <label for="pepperoni">Pepperoni</label>
+            <input type="checkbox" name="topping" value="bacon"/>
+            <label for="bacon">Bacon</label>
+            <input type="checkbox" name="topping" value="sausage"/>
+            <label for="sausage">Sausage</label>
+          </div>
+          <!--Veggies-->
+          <div>
+            <input type="checkbox" name="topping" value="mushrooms"/>
+            <label for="mushrooms">Mushrooms</label>
+            <input type="checkbox" name="topping" value="peppers"/>
+            <label for="peppers">Bell Peppers</label>
+            <input type="checkbox" name="topping" value="corn"/>
+            <label for="corn">Corn</label>
+          </div>
+        </fieldset>
+         <br/>
+        <!--Order type-->
+        <fieldset>
+          <legend>Select Order type: </legend>
+          <div>
+            <input type="radio" name="ordertype" value="delivery"/>
+            <label for="delivery">Delivery</label>
+            <input type="radio" name="ordertype" value="pickup" checked/>
+            <label for="pickup">Pickup</label>
+          </div>
+        </fieldset>
+        <br/>
+        <input type="reset" value ="Reset modifications"/>
+        <input type="submit" value="Submit modifications"/>
+      </form>
+    </main>
+</body>
