@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta title="Payment details">
+  <meta type="Student" name="Mitchell Fountain">
+  <meta charset="utf-8">
+</head>
+<body>
+    <form action="confirmation.html" method="post">
+        <fieldset>
+            <legend>Payment details</legend>
+            <div>
+                <label for="fname">First name on Card</label>
+                <input type="text" name="fname"/>
+            </div>
+            <br/>
+            <div>
+                <label for="fname">Last name on Card</label>
+                <input type="text" name="fname"/>
+            </div>
+        </fieldset>
+        <br/>
+        <fieldset>
+            <legend>Billing address</legend>
+            <div>
+                <label for="address">Address line 1</label>
+                <input type="address" name="address1"/>
+                <label for="address">Address line 2</label>
+                <input type="address" name="address2"/>
+                <label for="address">Postal code</label>
+                <input type="address" name="postal" placeholder="X1X1X1"/>
+            </div>
+            <br/>
+            <div>
+                <label for="prov">Province</label>
+                <select name="prov" id="prov">
+                    <optgroup label="Provinces and Territories">
+                    <option value="AB" >Alberta</option>
+                    <option value="BC" >British Columbia</option>
+                    <option value="MB" >Manitoba</option>
+                    <option value="NB" >New Brunswick</option>
+                    <option value="NF" >Newfoundland</option>
+                    <option value="NS" >Nova Scotia</option>
+                    <option value="ON" checked>Ontario</option>
+                    <option value="PE" >PEI</option>
+                    <option value="QB" >Québec</option>
+                    <option value="SK" >saskatchewan</option>
+                    <option value="NT"  >Northwest Territories</option>
+                    <option value="NV"  >Nunavut</option>
+                    <option value="YK" >Yukon</option>
+                    </optgroup>
+                    <optgroup label="Local delivery only"></optgroup>
+                    <option value=""disabled >I ain't going that far :/</option>
+                    </optgroup>
+                </select>
+            </div>
+        </fieldset>
+        <div>
+            <input type="reset" value ="Reset page"/>
+            <input type="submit" value="Submit"/>
+        </div>
+    </form>
+    <br/>
+</body>

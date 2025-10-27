@@ -6,7 +6,7 @@
   <meta charset="utf-8">
 </head>
 <body>
-    <form action="Payment" method="post">
+    <form action="payment.html" method="post">
         <fieldset>
             <legend>Contact details</legend>
             <div>
@@ -25,10 +25,11 @@
             </div>
             <br/>
             <div>
-                <label for="email">Phone Number: </label>
+                <label for="email">Email: </label>
                 <input type="email" name="email" placeholder="example@mail.com"/>
             </div>
         </fieldset>
+        <br/>
         <fieldset>
             <legend>Address</legend>
             <div>
@@ -59,8 +60,9 @@
                     </optgroup>
                 </select>
             </div>
-            </fieldset>
-            <fieldset>
+        </fieldset>
+        <br/>
+        <fieldset>
             <legend>Order update tracking</legend>
             <div>
                 <input type="checkbox" name="tracking" value="sms" checked/>
@@ -74,5 +76,11 @@
                 <input type="checkbox" name="tracking" value="pidgeon"/>
                 <label for="tracking">Carrier Pidgeon</label>
             </div>
+        </fieldset>
+        <br/>
+        <div>
+            <input type="reset" value ="Reset page"/>
+            <input type="submit" value="Submit"/>
+        </div>
     </form>
 </body>
