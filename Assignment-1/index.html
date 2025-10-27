@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta title="Pizza LTD">
+  <meta title="Pizza Customization">
   <meta type="Student" name="Mitchell Fountain">
   <meta charset="utf-8">
 </head>
@@ -15,10 +15,10 @@
     
     <main>
 
-      <form id="pizza_specs" action="" method="post">
+      <form id="pizza_specs" action="address.html" method="post">
         <!--Size-->
         <fieldset>
-          <h4>Select your size: </h4>
+          <legend>Select your size: </legend>
           <div>
             <input type="radio" name="size" value="6inch"/>
             <label for="6inch">6 inches</label>
@@ -37,9 +37,9 @@
           </div>
         </fieldset>
         <br/>
-        <!--Size-->
+        <!--Crust type-->
         <fieldset>
-          <h4>Select your crust: </h4>
+          <legend>Select your crust: </legend>
           <div>
             <input type="radio" name="crust" value="regular"/>
             <label for="6inch">Classic crust</label>
@@ -57,8 +57,10 @@
             <label for="15inch">Thin Crust</label>
           </div>
         </fieldset>
+         <br/>
+        <!--Sauce selection-->
         <fieldset>
-          <h4>Select your sauce</h4>
+          <legend>Select your sauce</legend>
           <div>
             <input type="checkbox" name="sauce" value="tomato" checked/>
             <label for="tomato">Marinara (Tomato sauce)</label>
@@ -68,17 +70,20 @@
             <label for="pesto">Pesto sauce</label>
           </div>
         </fieldset>
+         <br/>
         <fieldset>
-          <h4>Select your toppings: </h4>
+          <legend>Select your toppings: </legend>
           <div> <!--Cheeses-->
             <input type="checkbox" name="topping" value="mozzarella" checked/>
             <label for="mozzarella">Mozzarella</label>
-            <input type="checkbox" name="topping" value="gouda" checked/>
+            <input type="checkbox" name="topping" value="gouda"/>
             <label for="gouda">Gouda</label>
-            <input type="checkbox" name="topping" value="jack" checked/>
+            <input type="checkbox" name="topping" value="jack"/>
             <label for="gouda">Monterey Jack</label>
           </div>
-          <div><!--Meats-->
+          <!--Meats-->
+           <br/>
+          <div>
             <input type="checkbox" name="topping" value="pepperoni"/>
             <label for="pepperoni">Pepperoni</label>
             <input type="checkbox" name="topping" value="bacon"/>
@@ -86,7 +91,8 @@
             <input type="checkbox" name="topping" value="sausage"/>
             <label for="sausage">Sausage</label>
           </div>
-          <div><!--Veggies-->
+          <!--Veggies-->
+          <div>
             <input type="checkbox" name="topping" value="mushrooms"/>
             <label for="mushrooms">Mushrooms</label>
             <input type="checkbox" name="topping" value="peppers"/>
@@ -95,14 +101,19 @@
             <label for="corn">Corn</label>
           </div>
         </fieldset>
+         <br/>
+        <!--Order type-->
         <fieldset>
-          <h4>For Pickup or Delivery? </h4>
+          <legend>Select Order type: </legend>
           <div>
-            <input type="radio" name="delivery" value="yes"/>
-            <label for="yes">Deliver</label>
-            <input type="radio" name="delivery" value="no"/>
-            <label for="no">Pickup</label>
+            <input type="radio" name="ordertype" value="delivery"/>
+            <label for="delivery">Delivery</label>
+            <input type="radio" name="ordertype" value="pickup" checked/>
+            <label for="pickup">Pickup</label>
           </div>
         </fieldset>
+        <br/>
+        <input type="reset" value ="Reset modifications"/>
+        <input type="submit" value="Submit modifications"/>
       </form>
     </main>
