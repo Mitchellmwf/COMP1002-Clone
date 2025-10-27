@@ -12,12 +12,37 @@
                 <legend>Payment details</legend>
                 <div>
                     <label for="bfname">First name on Card</label>
-                    <input type="text" name="bfname"/>
+                    <input type="text" name="bfname" autocomplete="cc-given-name"/>
                 </div>
                 <br/>
                 <div>
                     <label for="blname">Last name on Card</label>
-                    <input type="text" name="blname"/>
+                    <input type="text" name="blname" autocomplete="cc-family-name"/>
+                </div>
+                <br/>
+                <div>
+                    <label for="credit">Credit Card Number</label>
+                    <input id="credit" type="tel" inputmode="numeric" autocomplete="cc-number" placeholder="xxxx xxxx xxxx xxxx">
+                </div>
+                <div>
+                    <label for="credit">CVV</label>
+                    <input id="cvv" type="tel" inputmode="numeric" autocomplete="cc-csc" placeholder="xxx">
+                </div>
+                <div>
+                    <label for="credit">Expiry</label>
+                    <input id="expiry" type="numnber" inputmode="numeric" autocomplete="cc-exp" placeholder="xx/xx" required pattern="(0[1-9]|1[0-2])\/\d{2}">
+                    <script>
+                        const exp = document.getElementById('expiry');
+
+                        exp.addEventListener('input', (e) => {
+                            let value = e.target.value.replace(/\D/g, '');
+                            
+                            if (value.length >=3) {
+                                value = value.slice(0,2) + '/' + value.slice(2,4);
+                            }
+                            e.target.value = value;
+                        });
+                    </script>
                 </div>
             </fieldset>
             <br/>
@@ -25,11 +50,11 @@
                 <legend>Billing address</legend>
                 <div>
                     <label for="baddress1">Address line 1</label>
-                    <input type="address" name="baddress1"/>
+                    <input type="address" name="baddress1" autocomplete="address-line1"/>
                     <label for="baddress2">Address line 2</label>
-                    <input type="address" name="baddress2"/>
+                    <input type="address" name="baddress2" autocomplete="address-line2"/>
                     <label for="postal">Postal code</label>
-                    <input type="address" name="postal" placeholder="X1X1X1"/>
+                    <input type="address" name="postal" placeholder="X1X1X1" autocomplete="postal-code"/>
                 </div>
                 <br/>
                 <div>
