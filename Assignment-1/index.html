@@ -4,6 +4,8 @@
   <meta title="Pizza Customization">
   <meta type="Student" name="Mitchell Fountain">
   <meta charset="utf-8">
+  <title>Mario's Pizza Palace pizza creator</title>
+  <link href="css/basics.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -22,7 +24,7 @@
             <label for="6inch">6 inches</label>
           </div>
           <div>
-            <input type="radio" name="size" value="10inch"/>
+            <input type="radio" name="size" value="10inch" checked/>
             <label for="10inch">10 inches</label>
           </div>
           <div>
@@ -34,12 +36,38 @@
             <label for="15inch">15 inches</label>
           </div>
         </fieldset>
+        <img src="imgs/pepperoni-pizza.png" id="pizzaIMG" alt="pizza"/>
+
+        <script>
+          const image = document.getElementById('pizzaIMG');
+          const radios = document.querySelectorAll('input[name="size"]');
+
+          radios.foreach(radio => {
+            radio.addEventListener('change', () => {
+              switch (radio.value) {
+                case '6inch':
+                  image.style.width = '150px';
+                  break;
+                case '8inch':
+                  image.style.width = '225';
+                  break;
+                case '10inch':
+                  image.style.width = '300';
+                  break;
+                case '13inch':
+                  image.style.width = '375';
+                  break;
+              };
+            });
+          });
+        </script>
+
         <br/>
         <!--Crust type-->
         <fieldset>
           <legend>Select your crust: </legend>
           <div>
-            <input type="radio" name="crust" value="regular"/>
+            <input type="radio" name="crust" value="regular" checked/>
             <label for="6inch">Classic crust</label>
           </div>
           <div>
