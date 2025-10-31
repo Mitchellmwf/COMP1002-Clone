@@ -8,7 +8,7 @@
 </head>
 <body>
     <main>
-        <form action="confirmation.html" method="get">
+        <form action="confirmation.php" method="get">
             <fieldset>
                 <legend>Payment details</legend>
                 <div>
@@ -87,4 +87,7 @@
         <br/>
     </main>
 </body>
+<?php 
+include("includes/footer.php")
+?>
 </html>

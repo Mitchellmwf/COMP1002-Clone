@@ -9,13 +9,12 @@
 </head>
 
 <body>
-
     <header>
       <h1>Welcome to <strong>Mario's Pizza Palace's</strong> pizza crafter</h1>
         <h2>Best Pizza in Town</h2> 
     </header>
     <main>
-      <form id="pizza_specs" action="address.html" method="get">
+      <form id="pizza_specs" action="address.php" method="get">
         <!--Size-->
         <div style="display: flex; align-items: center; gap: 20px;">
         <fieldset>
@@ -148,4 +147,7 @@
       </form>
     </main>
 </body>
+<?php 
+  include("includes/footer.php")
+?>
 </html>

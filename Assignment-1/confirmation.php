@@ -19,4 +19,7 @@
         <p>Comment and check formatting</p>
     </main>
 </body>
+<?php 
+include("includes/footer.php")
+?>
 </html>
