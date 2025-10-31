@@ -4,33 +4,34 @@
   <meta title="Payment details">
   <meta type="Author" name="Mitchell Fountain">
   <meta charset="utf-8">
+  <link href="css/basics.css" rel="stylesheet" />
 </head>
 <body>
     <main>
-        <form action="confirmation.html" method="post">
+        <form action="confirmation.html" method="get">
             <fieldset>
                 <legend>Payment details</legend>
                 <div>
                     <label for="bfname">First name on Card</label>
-                    <input type="text" name="bfname" autocomplete="cc-given-name"/>
+                    <input type="text" name="bfname" autocomplete="cc-given-name" required/>
                 </div>
                 <br/>
                 <div>
                     <label for="blname">Last name on Card</label>
-                    <input type="text" name="blname" autocomplete="cc-family-name"/>
+                    <input type="text" name="blname" autocomplete="cc-family-name" required/>
                 </div>
                 <br/>
                 <div>
                     <label for="credit">Credit Card Number</label>
-                    <input id="credit" type="tel" inputmode="numeric" autocomplete="cc-number" placeholder="xxxx xxxx xxxx xxxx">
+                    <input id="credit" type="tel" inputmode="numeric" autocomplete="cc-number" placeholder="xxxx xxxx xxxx xxxx" required>
                 </div>
                 <div>
                     <label for="credit">CVV</label>
-                    <input id="cvv" type="tel" inputmode="numeric" autocomplete="cc-csc" placeholder="xxx">
+                    <input id="cvv" type="tel" inputmode="numeric" autocomplete="cc-csc" placeholder="xxx" required>
                 </div>
                 <div>
                     <label for="credit">Expiry</label>
-                    <input id="expiry" type="numnber" inputmode="numeric" autocomplete="cc-exp" placeholder="xx/xx" required pattern="(0[1-9]|1[0-2])\/\d{2}">
+                    <input id="expiry" type="numnber" inputmode="numeric" autocomplete="cc-exp" placeholder="xx/xx" required pattern="(0[1-9]|1[0-2])\/\d{2}" required>
                     <script>
                         const exp = document.getElementById('expiry');
 
@@ -50,16 +51,16 @@
                 <legend>Billing address</legend>
                 <div>
                     <label for="baddress1">Address line 1</label>
-                    <input type="address" name="baddress1" autocomplete="address-line1"/>
+                    <input type="address" name="baddress1" autocomplete="address-line1" required/>
                     <label for="baddress2">Address line 2</label>
                     <input type="address" name="baddress2" autocomplete="address-line2"/>
                     <label for="postal">Postal code</label>
-                    <input type="address" name="postal" placeholder="X1X1X1" autocomplete="postal-code"/>
+                    <input type="address" name="postal" placeholder="X1X1X1" autocomplete="postal-code" required/>
                 </div>
                 <br/>
                 <div>
                     <label for="bprov">Province</label>
-                    <select name="bprov" id="prov">
+                    <select name="bprov" id="prov" required>
                         <optgroup label="Provinces and Territories">
                         <option value="AB" >Alberta</option>
                         <option value="BC" >British Columbia</option>
@@ -86,3 +87,4 @@
         <br/>
     </main>
 </body>
+</html>

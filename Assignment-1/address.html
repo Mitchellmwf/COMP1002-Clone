@@ -4,30 +4,31 @@
   <meta title="Address form">
   <meta type="Student" name="Mitchell Fountain">
   <meta charset="utf-8">
+  <link href="css/basics.css" rel="stylesheet" />
 </head>
 <body>
     <main>
-        <form action="payment.html" method="post">
+        <form action="payment.html" method="get">
             <fieldset>
                 <legend>Contact details</legend>
                 <div>
                     <label for="fname">First name</label>
-                    <input type="text" name="fname" autocomplete="given-name"/>
+                    <input type="text" name="fname" autocomplete="given-name" required/>
                 </div>
                 <br/>
                 <div>
                     <label for="lname">Last name</label>
-                    <input type="text" name="lname" autocomplete="family-name"/>
+                    <input type="text" name="lname" autocomplete="family-name" required/>
                 </div>
                 <br/>
                 <div>
                     <label for="phone">Phone Number: </label>
-                    <input type="tell" name="phone" placeholder="000 000 0000" autocomplete="tel"/>
+                    <input type="tel" inputmode="numeric" name="phone" placeholder="000 000 0000" autocomplete="tel" required/>
                 </div>
                 <br/>
                 <div>
                     <label for="email">Email: </label>
-                    <input type="email" name="email" placeholder="example@mail.com" autocomplete="email"/>
+                    <input type="email" name="email" placeholder="example@mail.com" autocomplete="email" required/>
                 </div>
             </fieldset>
             <br/>
@@ -35,12 +36,12 @@
                 <legend>Address</legend>
                 <div>
                     <label for="address">Address</label>
-                    <input type="address" name="address"/>
+                    <input type="address" name="address" required/>
                 </div>
                 <br/>
                 <div>
                     <label for="prov">Province</label>
-                    <select name="prov" id="prov">
+                    <select name="prov" id="prov" required>
                         <optgroup label="Provinces and Territories">
                         <option value="AB" disabled>Alberta</option>
                         <option value="BC" disabled>British Columbia</option>
@@ -86,3 +87,4 @@
         </form>
     </main>
 </body>
+</html>

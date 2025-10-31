@@ -12,20 +12,20 @@
 
     <header>
       <h1>Welcome to <strong>Mario's Pizza Palace's</strong> pizza crafter</h1>
-        <h2>Best Pizza in Town</h2>
+        <h2>Best Pizza in Town</h2> 
     </header>
     <main>
-      <form id="pizza_specs" action="address.html" method="post">
+      <form id="pizza_specs" action="address.html" method="get">
         <!--Size-->
         <div style="display: flex; align-items: center; gap: 20px;">
         <fieldset>
-          <legend>Select your size: </legend>
+          <legend >Select your size: </legend>
           <div>
             <input type="radio" name="size" value="6inch"/>
-            <label for="6inch">6 inches</label>
+            <label for="6inch" >6 inches</label>
           </div>
           <div>
-            <input type="radio" name="size" value="10inch" checked/>
+            <input type="radio" name="size" value="10inch" checked required/>
             <label for="10inch">10 inches</label>
           </div>
           <div>
@@ -71,7 +71,7 @@
         <fieldset>
           <legend>Select your crust: </legend>
           <div>
-            <input type="radio" name="crust" value="regular" checked/>
+            <input type="radio" name="crust" value="regular" checked required/>
             <label for="6inch">Classic crust</label>
           </div>
           <div>
@@ -90,7 +90,7 @@
          <br/>
         <!--Sauce selection-->
         <fieldset>
-          <legend>Select your sauce</legend>
+          <legend class="notRequired">Select your sauce</legend>
           <div>
             <input type="checkbox" name="sauce" value="tomato" checked/>
             <label for="tomato">Marinara (Tomato sauce)</label>
@@ -102,7 +102,7 @@
         </fieldset>
          <br/>
         <fieldset>
-          <legend>Select your toppings: </legend>
+          <legend class="notRequired">Select your toppings: </legend>
           <div> <!--Cheeses-->
             <input type="checkbox" name="topping" value="mozzarella" checked/>
             <label for="mozzarella">Mozzarella</label>
@@ -138,7 +138,7 @@
           <div>
             <input type="radio" name="ordertype" value="delivery"/>
             <label for="delivery">Delivery</label>
-            <input type="radio" name="ordertype" value="pickup" checked/>
+            <input type="radio" name="ordertype" value="pickup" required checked/>
             <label for="pickup">Pickup</label>
           </div>
         </fieldset>
@@ -148,3 +148,4 @@
       </form>
     </main>
 </body>
+</html>

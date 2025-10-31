@@ -8,6 +8,11 @@ body {
     transition: transform 0.3s ease;
     cursor: pointer;
 }
+legend:not(.notRequired)::after{
+  content: '* ';
+  color: red;
+}
+ 
 
 
 
