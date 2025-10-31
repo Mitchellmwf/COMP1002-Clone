@@ -17,6 +17,7 @@
     <main>
       <form id="pizza_specs" action="address.html" method="post">
         <!--Size-->
+        <div style="display: flex; align-items: center; gap: 20px;">
         <fieldset>
           <legend>Select your size: </legend>
           <div>
@@ -36,26 +37,29 @@
             <label for="15inch">15 inches</label>
           </div>
         </fieldset>
-        <img src="imgs/pepperoni-pizza.png" id="pizzaIMG" alt="pizza"/>
-
+        <div class="pizza-container">
+          <img src="imgs/pepperoni-pizza.png" id="pizzaIMG" alt="pizza" width="110"/>
+          <span class="hover-text">*Not to scale</span>
+        </div>
+        </div>
         <script>
           const image = document.getElementById('pizzaIMG');
           const radios = document.querySelectorAll('input[name="size"]');
 
-          radios.foreach(radio => {
+          radios.forEach(radio => {
             radio.addEventListener('change', () => {
               switch (radio.value) {
                 case '6inch':
-                  image.style.width = '150px';
-                  break;
-                case '8inch':
-                  image.style.width = '225';
+                  image.style.width = '75px';
                   break;
                 case '10inch':
-                  image.style.width = '300';
+                  image.style.width = '110px';
                   break;
                 case '13inch':
-                  image.style.width = '375';
+                  image.style.width = '140px';
+                  break;
+                case '15inch':
+                  image.style.width = '175px';
                   break;
               };
             });
