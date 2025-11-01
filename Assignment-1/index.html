@@ -19,8 +19,17 @@
     <main>
       <!--Form to grab pizza toppings/fixings -->
       <form id="pizza_specs" action="address.html" method="get">
+      <div>
+        <!--Number of Pizzas-->
+        <fieldset>
+          <legend>How many pizzas to order?</legend>
+          <label for="PizzaCount">Number of pizzas: </label>
+          <input type="number" name="PizzaCount" value="1" min="0" max="15" required ">
+        </fieldset>
+      </div>
+      <br/>
         <!--Pizza Size-->
-        <div style="display: flex; align-items: center; gap: 20px;"> <!--Style to centre thing -->
+      <div style="display: flex; align-items: center; gap: 20px;"> <!--Style to centre thing -->
         <fieldset>
           <legend >Select your size: </legend>
           <div>
