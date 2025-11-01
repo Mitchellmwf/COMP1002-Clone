@@ -22,7 +22,7 @@
       <div>
         <!--Number of Pizzas-->
         <fieldset>
-          <legend>How many pizzas to order?</legend>
+          <legend class="LegReq">How many pizzas to order?</legend>
           <label for="PizzaCount">Number of pizzas: </label>
           <input type="number" name="PizzaCount" value="1" min="0" max="15" required ">
         </fieldset>
@@ -31,7 +31,7 @@
         <!--Pizza Size-->
       <div style="display: flex; align-items: center; gap: 20px;"> <!--Style to centre thing -->
         <fieldset>
-          <legend >Select your size: </legend>
+          <legend class="LegReq">Select your size: </legend>
           <div>
             <input type="radio" name="size" value="6inch"/>
             <label for="6inch" >6 inches</label>
@@ -83,7 +83,7 @@
         <br/>
         <!--Crust type-->
         <fieldset>
-          <legend>Select your crust: </legend>
+          <legend class="LegReq">Select your crust: </legend>
           <div>
             <input type="radio" name="crust" value="regular" checked required/>
             <label for="6inch">Classic crust</label>
@@ -104,7 +104,7 @@
          <br/>
         <!--Sauce selection-->
         <fieldset>
-          <legend class="notRequired">Select your sauce</legend>
+          <legend>Select your sauce</legend>
           <div>
             <input type="checkbox" name="sauce" value="tomato" checked/>
             <label for="tomato">Marinara (Tomato sauce)</label>
@@ -116,7 +116,7 @@
         </fieldset>
          <br/>
         <fieldset>
-          <legend class="notRequired">Select your toppings: </legend>
+          <legend>Select your toppings: </legend>
           <div> <!--Cheeses-->
             <input type="checkbox" name="topping" value="mozzarella" checked/>
             <label for="mozzarella">Mozzarella</label>
@@ -148,7 +148,7 @@
          <br/>
         <!--Order type-->
         <fieldset>
-          <legend>Select Order type: </legend>
+          <legend class="LegReq">Select Order type: </legend>
           <div>
             <input type="radio" name="ordertype" value="delivery"/>
             <label for="delivery">Delivery</label>

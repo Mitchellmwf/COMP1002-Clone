@@ -10,7 +10,7 @@
 <body>
     <main>
         <form action="confirmation.html" method="get">
-            <fieldset>
+            <fieldset class="ItemReq">
                 <!--Name and card details -->
                 <legend>Payment details</legend>
                 <div>
@@ -53,12 +53,12 @@
             </fieldset>
             <br/>
             <!--billing address section -->
-            <fieldset>
+            <fieldset class="ItemReq">
                 <legend>Billing address</legend>
                 <div>
                     <label for="baddress1">Address line 1</label>
                     <input type="address" name="baddress1" autocomplete="address-line1" required/>
-                    <label for="baddress2">Address line 2</label>
+                    <label for="baddress2" class="notReq">Address line 2</label>
                     <input type="address" name="baddress2" autocomplete="address-line2"/>
                 </div>
                 <br/>

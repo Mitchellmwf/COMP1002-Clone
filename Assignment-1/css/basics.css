@@ -3,7 +3,7 @@ body {
 	margin: 0 auto;
 	min-width: 768px;
   margin-top: 20px;
-	max-width: 102px;
+	max-width: 1020px;
 }
 /*Grow pizza image on index page on when hovered*/
 #pizzaIMG:hover {
@@ -11,11 +11,17 @@ body {
     transition: transform 0.3s ease;
     cursor: pointer;
 }
-/*I have less non required pages so I inverted it, but it adds a red asterisk to the required form inputs*/
-legend:not(.notRequired)::after{
+/*Add asterisks to each item in fieldset without radio or checkbox*/
+fieldset.ItemReq label:not(.notReq)::after{
   content: '* ';
   color: red;
 }
+/*Add asterisks to the legend for fieldset with radio or checkbox*/
+legend.LegReq::after{
+  content: '* ';
+  color: red;
+}
+
 /*add margins to headers and centre*/
 h1{
   text-align: center;
