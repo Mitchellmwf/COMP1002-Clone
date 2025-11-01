@@ -50,12 +50,14 @@ h2{
 
 /* Text to show on hover (hidden) */
 .hover-text {
-  position: relative;
-  left: 10%;
+  position: absolute;
+  top: 80%;
+  left: 110%;
   white-space: nowrap;/*make render in one light*/
   color: black;
   font-size: 20px;
   opacity: 0; /*start hidden*/
+  pointer-events: none; /*lets hover pass through to the image*/
   transition: opacity 0.3s ease; /*Slowly changes opacity*/
 }
 
