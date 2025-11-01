@@ -142,8 +142,8 @@
           </div>
         </fieldset>
         <br/>
-        <input type="reset" value ="Reset modifications"/>
-        <input type="submit" value="Submit modifications"/>
+        <input class="button" type="reset" value ="Reset modifications"/>
+        <input class="button" type="submit" value="Submit modifications"/>
       </form>
     </main>
 </body>

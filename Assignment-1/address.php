@@ -81,8 +81,8 @@
             </fieldset>
             <br/>
             <div>
-                <input type="reset" value ="Reset page"/>
-                <input type="submit" value="Submit"/>
+                <input class="button" type="reset" value ="Reset page"/>
+                <input class="button" type="submit" value="Submit"/>
             </div>
         </form>
     </main>
