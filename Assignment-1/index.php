@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta title="Pizza Customization">
   <meta type="Student" name="Mitchell Fountain">
@@ -9,14 +10,17 @@
 </head>
 
 <body>
+  <!--Welcome message -->
     <header>
       <h1>Welcome to <strong>Mario's Pizza Palace's</strong> pizza crafter</h1>
         <h2>Best Pizza in Town</h2> 
     </header>
+
     <main>
+      <!--Form to grab pizza toppings/fixings -->
       <form id="pizza_specs" action="address.php" method="get">
-        <!--Size-->
-        <div style="display: flex; align-items: center; gap: 20px;">
+        <!--Pizza Size-->
+        <div style="display: flex; align-items: center; gap: 20px;"> <!--Style to centre thing -->
         <fieldset>
           <legend >Select your size: </legend>
           <div>
@@ -36,12 +40,14 @@
             <label for="15inch">15 inches</label>
           </div>
         </fieldset>
+        <!--Add pizza image and effect on hover -->
         <div class="pizza-container">
           <img src="imgs/pepperoni-pizza.png" id="pizzaIMG" alt="pizza" width="110"/>
           <span class="hover-text">*Not to scale</span>
         </div>
         </div>
-        <script>
+        <!--JS Script to change pizza img size based on size selected -->
+        <script> 
           const image = document.getElementById('pizzaIMG');
           const radios = document.querySelectorAll('input[name="size"]');
 
@@ -141,12 +147,16 @@
             <label for="pickup">Pickup</label>
           </div>
         </fieldset>
+
         <br/>
+
+        <!--S&R buttons -->
         <input class="button" type="reset" value ="Reset modifications"/>
         <input class="button" type="submit" value="Submit modifications"/>
       </form>
     </main>
 </body>
+<!--Using php to add a header to all pages without having to adjust all pages -->
 <?php 
   include("includes/footer.php")
 ?>

@@ -8,6 +8,7 @@
 </head>
 <body>
     <main>
+        <!--For to get user's delivery address -->
         <form action="payment.php" method="get">
             <fieldset>
                 <legend>Contact details</legend>
@@ -40,6 +41,7 @@
                 </div>
                 <br/>
                 <div>
+                    <!--Location only has one location and doesn't do interprovince delivery, so all options but Ontario disabled -->
                     <label for="prov">Province</label>
                     <select name="prov" id="prov" required>
                         <optgroup label="Provinces and Territories">
@@ -57,6 +59,7 @@
                         <option value="NV" disabled >Nunavut</option>
                         <option value="YK"disabled >Yukon</option>
                         </optgroup>
+                        <!--Easter egg thing -->
                         <optgroup label="Local delivery only"></optgroup>
                         <option value=""disabled >I ain't going that far :/</option>
                         </optgroup>
@@ -64,8 +67,9 @@
                 </div>
             </fieldset>
             <br/>
+            <!--Order tracking -->
             <fieldset>
-                <legend>Order update tracking</legend>
+                <legend class="notRequired">Order update tracking</legend>
                 <div>
                     <input type="checkbox" name="tracking" value="sms" checked/>
                     <label for="tracking">Text</label>
@@ -80,6 +84,7 @@
                 </div>
             </fieldset>
             <br/>
+            <!--S&R Buttons -->
             <div>
                 <input class="button" type="reset" value ="Reset page"/>
                 <input class="button" type="submit" value="Submit"/>
@@ -87,6 +92,7 @@
         </form>
     </main>
 </body>
+<!--php footer -->
 <?php 
 include("includes/footer.php")
 ?>

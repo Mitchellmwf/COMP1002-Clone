@@ -6,10 +6,12 @@
   <meta charset="utf-8">
   <link href="css/basics.css" rel="stylesheet" />
 </head>
+<!--Page to grab card payment details -->
 <body>
     <main>
         <form action="confirmation.php" method="get">
             <fieldset>
+                <!--Name and card details -->
                 <legend>Payment details</legend>
                 <div>
                     <label for="bfname">First name on Card</label>
@@ -25,13 +27,16 @@
                     <label for="credit">Credit Card Number</label>
                     <input id="credit" type="tel" inputmode="numeric" autocomplete="cc-number" placeholder="xxxx xxxx xxxx xxxx" required>
                 </div>
+                <br/>
                 <div>
                     <label for="credit">CVV</label>
                     <input id="cvv" type="tel" inputmode="numeric" autocomplete="cc-csc" placeholder="xxx" required>
                 </div>
+                <br/>
                 <div>
                     <label for="credit">Expiry</label>
                     <input id="expiry" type="numnber" inputmode="numeric" autocomplete="cc-exp" placeholder="xx/xx" required pattern="(0[1-9]|1[0-2])\/\d{2}" required>
+                    <!--JS to make expiry date formatting correct and auto place a '/' -->
                     <script>
                         const exp = document.getElementById('expiry');
 
@@ -47,6 +52,7 @@
                 </div>
             </fieldset>
             <br/>
+            <!--billing address section -->
             <fieldset>
                 <legend>Billing address</legend>
                 <div>
@@ -54,6 +60,9 @@
                     <input type="address" name="baddress1" autocomplete="address-line1" required/>
                     <label for="baddress2">Address line 2</label>
                     <input type="address" name="baddress2" autocomplete="address-line2"/>
+                </div>
+                <br/>
+                <div>
                     <label for="postal">Postal code</label>
                     <input type="address" name="postal" placeholder="X1X1X1" autocomplete="postal-code" required/>
                 </div>
@@ -80,6 +89,7 @@
                 </div>
             </fieldset>
             <div>
+                <!--S&R buttons -->
                 <input class="button" type="reset" value ="Reset page"/>
                 <input class="button" type="submit" value="Submit"/>
             </div>
@@ -87,6 +97,7 @@
         <br/>
     </main>
 </body>
+<!--Footer -->
 <?php 
 include("includes/footer.php")
 ?>

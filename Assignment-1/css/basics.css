@@ -1,25 +1,36 @@
+/*Centre things and add margins*/
 body {
 	margin: 0 auto;
 	min-width: 768px;
   margin-top: 20px;
-	max-width: 1024px;
+	max-width: 102px;
 }
+/*Grow pizza image on index page on when hovered*/
 #pizzaIMG:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
     cursor: pointer;
 }
+/*I have less non required pages so I inverted it, but it adds a red asterisk to the required form inputs*/
 legend:not(.notRequired)::after{
   content: '* ';
   color: red;
 }
-h1, h2{
+/*add margins to headers and centre*/
+h1{
   text-align: center;
   margin-bottom: 40px;
 }
+/*centre footer*/
+footer{
+  text-align: center;
+}
+/*header margin*/
 h2{ 
+  text-align: center;
   margin-bottom: 65px;
 }
+/*When you hover over S&R buttons, it turns blue*/
 .button:hover{
   background-color: lightblue
 }
@@ -27,28 +38,28 @@ h2{
 
 
 
+/*Here we get into the more experiment stuff*/
 
+/**/
 .pizza-container {
   position: relative;
-  display: inline-block;
-  cursor: pointer;
+  display: inline-block; 
+  cursor: pointer; /*sets the cursor to look like the pointing hand*/
 }
 
 
-/* The overlay text (initially hidden) */
+/* Text to show on hover (hidden) */
 .hover-text {
-  position: absolute;
-  top: 20%;
-  left: 110%;
-  white-space: nowrap;
+  position: relative;
+  left: 10%;
+  white-space: nowrap;/*make render in one light*/
   color: black;
   font-size: 20px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none; /* lets hover pass through to the image */
+  opacity: 0; /*start hidden*/
+  transition: opacity 0.3s ease; /*Slowly changes opacity*/
 }
 
-/* Show the text when hovering the container or image */
+/*Make text show on hover*/
 .pizza-container:hover .hover-text {
   opacity: 1;
 }
