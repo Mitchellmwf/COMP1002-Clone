@@ -1,8 +1,12 @@
 
+@charset "utf-8";
 /* STEP 3: Set character encoding (must be first line of file) */
 /* STEP 4a: Set the border properties on the DIV#container - border-width, border-style, border-color */
 div#container {
-
+  /* border-width: 10px;
+  border-style: dashed;
+  border-color: orange; */
+  border: 10px dashed orange;
 }
 /* STEP 4b: Control one of the four borders independently of the others - try border-top-style */
 
@@ -10,9 +14,11 @@ div#container {
 
 /* STEP 5a: Set padding values on the DIV#container element - set individual padding values, then use shorthand with the clock rule again (TRBL) */
 div#container {
-
   margin: 5% auto;
-
+  padding: 50px 40px 30px 20px;
+  background-color: lemonchiffon;
+  background-image: url('../images/stucco.jpg');
+  background-repeat: no-repeat;
 }
 /* STEP 5b: Apply a background-image to the same element (controlling background-repeat, background-position, and background-size) */
 
@@ -24,7 +30,7 @@ body {
 
 /* STEP 6a: Control the width of the DIV#container with a fixed unit (px) */
 div#container {
-
+  width: 70%;
 }
 /* STEP 6b: Change the width to a relative unit of measure (%) */
 
@@ -42,7 +48,9 @@ h1 em {
 
 /* STEP 10: Comment out the width and display settings below for the MAIN SECTION elements, and use Flexbox, instead - set display to 'flex' on the MAIN element (the container of the SECTION elements) - learn more at https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 main {
-
+  display: inline;
+  width: 500px;
+  border: 5px solid green;
 }
 
 /* STEP 8c: Set the width of the 3 MAIN SECTION elements to 30% and arrange them with the display property using inline-block to arrange them side-by-side */

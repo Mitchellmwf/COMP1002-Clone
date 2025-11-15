@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+div#container {
+  background-image: url("../images/Infiltration_Text.jpg");
+  background-size: cover;
+  color: white;
+  height: 1000px;
+  width: 700px;
+  text-transform: uppercase;
+  font-family: "arial narrow", sans-serif;
+}
+#tagline {
+    text-align: center;
+    color: gray;
+    -webkit-transform:scale(1,1.15);
+    -moz-transform:scale(2,1);
+    font-size: 1.1em;
+    letter-spacing: -0.07em;
+    padding-top: 22px;
+}
+#title {
+    text-align: center;
+    font-weight: lighter;
+    -webkit-transform:scale(1,1.15);
+    -moz-transform:scale(2,1);
+    font-size: 7.2em;
+    letter-spacing: -0.1em;
+    padding-top: 401px;
+    color: black;
+}
+.studios {
+    text-align: center;
+    font-weight: lighter;
+    -webkit-transform:scale(1,1.15);
+    -moz-transform:scale(2,1);
+    font-size: 1em;
+    letter-spacing: -0.08em;
+    padding-top: 20px;
+    margin-top: 0;
+    color: black;
+}

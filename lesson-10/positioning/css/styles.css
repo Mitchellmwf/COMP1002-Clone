@@ -6,7 +6,11 @@
 
 /* STEP 1: Style the ASIDE element - change the background-color, and the width properties */
 aside {
-
+	background-color: lightblue;
+	width: 150px;
+	position: relative;
+	left: 100px;
+	top: 20px;
 }
 
 /* STEP 2: Change the position property of the ASIDE element - static | relative | absolute | sticky - proceed to STEP 2a below */
