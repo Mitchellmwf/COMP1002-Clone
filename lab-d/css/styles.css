@@ -68,7 +68,7 @@ main {
 
 /* STEP 5a: Put a 1px dotted hotpink border around MAIN SECTION in the CSS rule below so we can see the box on the screen */
 main section {
-	border: 1px dotted hotpink;
+	/* border: 1px dotted hotpink; */
 	width: 60%;
 	padding: 1em;
 }
