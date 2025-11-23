@@ -1,11 +1,14 @@
 @charset "utf-8";
 html, body {
     text-align: center;
+     margin: 0 auto;
+    
 }
 div#container {
   background-image: url("../images/Infiltration.jpg");
   background-size: cover;
   color: black;
+  margin: 0 auto;
   height: 1000px;
   width: 700px;
   text-transform: uppercase;
@@ -112,4 +115,8 @@ div#container {
     top: 645px;
     text-align:justify;
     text-shadow: 0.5px 0.5px 1px black;
+}
+img {
+    width: 150px;
+    margin-top: -10px;
 }
