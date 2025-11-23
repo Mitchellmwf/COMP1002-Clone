@@ -9,12 +9,15 @@ div#container {
   background-size: cover;
   color: black;
   margin: 0 auto;
+  /*restrict to image resoliution*/
   height: 1000px;
   width: 700px;
   text-transform: uppercase;
   font-family: "arial narrow", sans-serif;
 }
-/* #tagline {
+/* Attempt 1
+
+#tagline {
     text-align: center;
     color: gray;
     -webkit-transform:scale(1,1.15);
@@ -66,6 +69,7 @@ div#container {
     display: inline;
     top: 685px;
     left: -175px;
+    /* make look bolder */
     text-shadow: 0.5px 0.5px 2px black; 
     line-height: 0.25;
 }
