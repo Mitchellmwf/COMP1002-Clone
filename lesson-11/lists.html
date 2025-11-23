@@ -10,20 +10,22 @@
 		/* STEP 5: Styling Lists (list-style-type, list-style-position, list-style-image) */
 		/* STEP 5a: list-style-type (none | square | circle | disc) */
 		ul {
-
+			list-style-type: square; 
+			list-style-position: inside;
 		}
 		/* STEP 5b: Manipulate the list-style-position (inside | outside) in the rule above */
 		/* STEP 5c: Substitute regular list markers with images (list-style-image) in the rule just below */
 		ul {
-
+			list-style-image: url('images/to-do-list.svg'); 
 		}
 		/* STEP 5d: list-style-type (armenian | decimal | decimal-leading-zero | georgian | lower/upper-alpha | lower-greek | lower-latin | lower/upper-roman) - change in the rule below */
 		ol {
 			/* list-style-type: upper-latin; */
+			list-style-type: decimal;
 		}
 		/* STEP 6: Laying Out Lists horizontally - use display: inline-block or inline */
 		li {
-
+			display: inline-block;
 		}
 		/* STEP 7: Targetting nested lists with contextual selectors - comment out all above declarations first */
 		ul ul {
@@ -49,15 +51,43 @@
 	<main>
 		<!-- STEP 1: Build a simple Unordered List -->
 		<h2>Unordered List</h2>
-
+		<ul>
+			<li>First item</li>
+			<li>Second item</li>
+			<li>Third item</li>
+		</ul>
 		<!-- STEP 2: Build a simple Ordered List -->
 		<h2>Ordered List</h2>
-
+		<ol>
+			<li>First item</li>
+			<li>Second item</li>
+			<li>Third item</li>
+		</ol>
 		<!-- STEP 3: Build a Definition List -->
 		<h2>Definition List</h2>
-
+		<dl>
+			<dt>HTML</dt>
+			<dd>HyperText Markup Language</dd>
+			<dt>CSS</dt>
+			<dd>Cascading Style Sheets</dd>
+			<dt>JS</dt> 
+			<dd>JavaScript</dd>
 		<!-- STEP 4: Build a nested list -->
 		<h2>Nested Lists</h2>
+		<ul>
+			<li>First item
+				<ul>
+					<li>First nested item
+						<ul>
+							<li>First nested nested item</li>
+							<li>Second nested nested item</li>
+						</ul>
+					</li>
+					<li>Second nested item</li>
+				</ul>
+			</li>
+			<li>Second item</li>
+			<li>Third item</li>
 
 	</main>
 	<footer>
