@@ -1,15 +1,17 @@
 @charset "utf-8";
-
+html, body {
+    text-align: center;
+}
 div#container {
-  background-image: url("../images/Infiltration_Text.jpg");
+  background-image: url("../images/Infiltration.jpg");
   background-size: cover;
-  color: white;
+  color: black;
   height: 1000px;
   width: 700px;
   text-transform: uppercase;
   font-family: "arial narrow", sans-serif;
 }
-#tagline {
+/* #tagline {
     text-align: center;
     color: gray;
     -webkit-transform:scale(1,1.15);
@@ -18,6 +20,20 @@ div#container {
     letter-spacing: -0.07em;
     padding-top: 22px;
 }
+
+#studios {
+    text-align: left;
+    font-weight: lighter;
+    -webkit-transform:scale(1,1.15);
+    -moz-transform:scale(2,1);
+    font-size: .3em;
+    letter-spacing: -0.08em;
+    padding-left: ;
+    padding-top: 20px;
+    margin-top: 0;
+    color: white;
+}
+
 #title {
     text-align: center;
     font-weight: lighter;
@@ -25,17 +41,71 @@ div#container {
     -moz-transform:scale(2,1);
     font-size: 7.2em;
     letter-spacing: -0.1em;
-    padding-top: 401px;
+    padding-top: 501px;
     color: black;
-}
-.studios {
-    text-align: center;
-    font-weight: lighter;
-    -webkit-transform:scale(1,1.15);
-    -moz-transform:scale(2,1);
-    font-size: 1em;
+} */
+
+#tagline {
+    position: relative;
     letter-spacing: -0.08em;
-    padding-top: 20px;
-    margin-top: 0;
+    color: gray;
+    font-size: 1.1em;
+    display: inline;
+    top: 25px;
+    text-align: center;
+
+}
+#studios {
+    position: relative;
+    letter-spacing: -0.08em;
     color: black;
+    font-size: 0.6em;
+    display: inline;
+    top: 685px;
+    left: -175px;
+    line-height: 0.25;
+}
+#studios > h3 {
+    font-size: 0.9em;
+}
+
+#director {
+    position: relative;
+    letter-spacing: -0.08em;
+    color: black;
+    font-size: 1em;
+    display: inline;
+    top: 690px;
+    left: -175px;
+    line-height: 0.1;
+}
+#director > h3 {
+    font-size: 0.9em;
+}
+
+#title {
+    position: relative;
+    letter-spacing: -0.1em;
+    color: black;
+    font-size: 7.2em;
+    display: inline;
+    top: 670px;
+    text-align: center;
+}
+#disclaimer-container {
+    position: relative;
+    left: 100px;
+    width: 73%;
+}
+
+#disclaimer {
+    position: relative;
+    letter-spacing: -0.01em;
+    color: black;
+    font-size: 0.5em;
+    line-height: 0.9em;
+    display: inline;
+    top: 655px;
+    text-align: justify;
+    text-shadow: 1px 1px 2px black;
 }
